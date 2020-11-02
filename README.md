@@ -1,15 +1,7 @@
-# 👷 `worker-template` Hello World
+# Galileo short link
 
-A template for kick starting a Cloudflare worker project.
+A CloudFlare worker script to handle short links used by venture fund [Galileo Ventures](https://galileo.ventures).
 
-[`index.js`](https://github.com/cloudflare/worker-template/blob/master/index.js) is the content of the Workers script.
+This repo when deployed simply uses a CloudFlare Worker KV store to get the shortlink and 301 to a destination (e.g. /wiki -> https://wikipedia.org).
 
-#### Wrangler
-
-To generate using [wrangler](https://github.com/cloudflare/wrangler)
-
-```
-wrangler generate projectname https://github.com/cloudflare/worker-template
-```
-
-Further documentation for Wrangler can be found [here](https://developers.cloudflare.com/workers/tooling/wrangler).
+TODO more instructions and a writeup on how to set up yourself!
